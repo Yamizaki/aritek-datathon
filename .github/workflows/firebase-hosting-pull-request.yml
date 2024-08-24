@@ -20,7 +20,7 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DT_FRANCHISING }}
           channelId: live
           projectId: aritek-preview
-          
+          target: staging
       - name: Deploy to production
         if: ${{ github.ref == 'refs/heads/master' }}
         uses: FirebaseExtended/action-hosting-deploy@v0
@@ -29,4 +29,5 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_DT_FRANCHISING }}
           channelId: live
           projectId: aritek-datathon
+          target: production
          
