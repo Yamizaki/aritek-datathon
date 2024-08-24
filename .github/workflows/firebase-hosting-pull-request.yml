@@ -19,7 +19,7 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ARITEK_DATATHON }}
           channelId: live
-          projectId: aritek-preview
+          projectId: aritek-datathon
           target: staging
 
       - name: Deploy to production
@@ -30,6 +30,6 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ARITEK_DATATHON}}
           channelId: live
           projectId: aritek-datathon
-          target: production
+          
 
          

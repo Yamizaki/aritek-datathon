@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "stagin",
     "site": "aritek-preview",
     "public": "public/",
     "ignore": [
