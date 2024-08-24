@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "aritek-preview",
     "public": "public/",
     "ignore": [
       "firebase.json",
