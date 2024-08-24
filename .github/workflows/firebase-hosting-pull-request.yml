@@ -20,7 +20,7 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_ARITEK_DATATHON }}
           channelId: live
           projectId: aritek-datathon
-          target: staging
+          
 
       - name: Deploy to production
         if: ${{ github.ref == 'refs/heads/master' }}
